@@ -5,7 +5,7 @@
 }
 
 .table hr {
-  border-top: 1px solid ;
+  border-top: 1px solid;
   border-color: #2d313e;
 }
 
@@ -28,8 +28,8 @@
   background-color: #34c38f;
   color: inherit;
   cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;

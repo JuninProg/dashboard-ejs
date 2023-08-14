@@ -4,12 +4,13 @@
       <p>Customers</p>
     </div>
     <div>
-      <a>+ Add New Customer</a>
+      <a href="/customers/create">+ Add New Customer</a>
     </div>
   </div>
   <hr>
   <table class="table-content">
     <tr class="table-content-header">
+      <th>ID</th>
       <th>Name</th>
       <th>Age</th>
       <th>Gender</th>
@@ -17,16 +18,17 @@
       <th>Created</th>
       <th>Actions</th>
     </tr>
-    <% for (let i = 0; i < 5; i++) { %>
+    <% for (const customer of customers) { %>
       <tr class="table-content-row">
-        <td>Joeliton</td>
-        <td>24 anos</td>
-        <td>Homem</td>
-        <td>R$ 2000,00</td>
-        <td>03/11/2023</td>
+        <td><%- customer.id %></td>
+        <td><%- customer.name %></td>
+        <td><%- customer.age %></td>
+        <td><%- customer.gender %></td>
+        <td><%- customer.billing %></td>
+        <td><%- customer.createdAt %></td>
         <td>
-          <button>Editar</button>
-          <button>Remover</button>
+          <a href="/customers/<%- customer.id %>/edit">Editar</a>
+          <a href="/api/customers/<%- customer.id %>/remove">Remover</a>
         </td>
       </tr>
     <% } %>

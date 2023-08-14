@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-header {
+  flex: auto;
+  max-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-content {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 10px;
+  font-size: 1.5rem;
+  background-color: #2d313e;
+}

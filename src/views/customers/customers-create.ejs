@@ -1,0 +1,11 @@
+<div class="layout-content form">
+  <div class="form-header">
+    <p>Create a new customer</p>
+  </div>
+  <form action="/api/customers" method="post" class="form-content">
+    <%- include('customers-form', { customer: {} }) %>
+    <div class="form-action">
+      <button type="submit">Salvar</button>
+    </div>
+  </form>
+</div>
